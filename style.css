@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+::selection {
+    color: #f0f0f0;
+    background-color: #333;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px 40px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
+}
+
+.wrapper:hover {
+    transform: translateY(-5px);
+}
+
+.wrapper header {
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.wrapper form {
+    margin: 20px 0;
+}
+
+form .row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+form .row label {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+form .row textarea,
+form .row select,
+form button {
+    outline: none;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+
+form .row textarea {
+    resize: none;
+    height: 110px;
+    font-size: 15px;
+    padding: 10px;
+    background: #f7f7f7;
+    color: #333;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+form .row textarea:focus {
+    box-shadow: inset 0 0 5px rgba(100, 100, 100, 0.3);
+}
+
+form .row .outer {
+    height: 45px;
+    display: flex;
+    padding: 0 15px;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f7f7;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+form .row select {
+    font-size: 14px;
+    background: none;
+    color: #333;
+    cursor: pointer;
+}
+
+form button {
+    height: 50px;
+    color: #fff;
+    font-size: 16px;
+    background-color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+    background-color: #444;
+    transform: translateY(-3px);
+}
+
+form button:active {
+    transform: translateY(1px);
+}
+
+@media(max-width: 400px) {
+    .wrapper {
+        padding: 25px 30px;
+    }
+}
